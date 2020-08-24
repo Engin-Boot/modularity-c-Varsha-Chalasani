@@ -1,6 +1,7 @@
 using System;
 using System.Diagnostics;
 using System.Drawing;
+using System.Text;
 
 namespace TelCo.ColorCoder
 {
@@ -9,10 +10,15 @@ namespace TelCo.ColorCoder
     /// </summary>
     partial class Program
     {
-        public override string ToString(int pairNumber)
+        public override string ToString()
         {
-             ColorPair pair = Program.GetColorFromPairNumber(pairNumber);
-             string colorCodeWithColors = "Pair Number : {pairNumber}    Colors : {pair}\n";
+            StringBuilder colorCodeWithColors = new StringBuilder("");
+            for(int pairNumber = 1; pairNumber < 26; pairNumber++)
+            {
+                ColorPair pair = Program.GetColorFromPairNumber(pairNumber);
+                colorCodeWithColors.Append("Pair Number : {pairNumber}    Colors : {pair}\n"); 
+            }
+            
              return colorCodeWithColors;
         }
     }
