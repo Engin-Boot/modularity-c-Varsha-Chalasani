@@ -12,11 +12,11 @@ namespace TelCo.ColorCoder
     {
         public override string ToString()
         {
-            StringBuilder colorCodeWithColors = new StringBuilder("");
+            string colorCodeWithColors = "";
             for(int pairNumber = 1; pairNumber < 26; pairNumber++)
             {
                 ColorPair pair = Program.GetColorFromPairNumber(pairNumber);
-                colorCodeWithColors.Append("Pair Number : {pairNumber}    Colors : {pair}\n"); 
+                colorCodeWithColors += "Pair Number : {pairNumber}    Colors : {pair}\n"; 
             }
             
              return colorCodeWithColors;
