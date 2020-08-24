@@ -44,7 +44,8 @@ namespace TelCo.ColorCoder
             Console.WriteLine("[In]Colors: {0}, [Out] PairNumber: {1}\n\n", testPair2, pairNumber);
             Debug.Assert(pairNumber == 6);
             
-            Console.WriteLine(Program.ToString());
+            string colorCodeWithColors = Program.ToString();
+            Console.WriteLine(colorCodeWithColors);
         }
     }
 }
