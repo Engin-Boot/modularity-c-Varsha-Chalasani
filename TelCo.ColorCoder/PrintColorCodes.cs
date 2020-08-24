@@ -9,7 +9,7 @@ namespace TelCo.ColorCoder
     /// </summary>
     partial class Program
     {
-        private override void ToString()
+        public override void ToString()
         {
             for(int pairNumber = 1; pairNumber < 26; pairNumber++)
             {
