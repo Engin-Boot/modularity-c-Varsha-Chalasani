@@ -8,7 +8,7 @@ namespace TelCo.ColorCoder
     /// <summary>
     /// This class provides the mapping of pair number to color 
     /// </summary>
-    class GetColor
+    partial class program
     {
         /// <summary>
         /// Given a pair number function returns the major and minor colors in that order
