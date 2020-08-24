@@ -41,8 +41,10 @@ namespace TelCo.ColorCoder
 
             testPair2 = new ColorPair() { majorColor = Color.Red, minorColor = Color.Blue };
             pairNumber = Program.GetPairNumberFromColor(testPair2);
-            Console.WriteLine("[In]Colors: {0}, [Out] PairNumber: {1}", testPair2, pairNumber);
+            Console.WriteLine("[In]Colors: {0}, [Out] PairNumber: {1}\n\n", testPair2, pairNumber);
             Debug.Assert(pairNumber == 6);
+            
+            Program.ToString();
         }
     }
 }
