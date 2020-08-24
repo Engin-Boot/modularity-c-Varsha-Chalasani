@@ -1,21 +1,20 @@
 using System;
 using System.Diagnostics;
 using System.Drawing;
-using DefineColorLists;
 
 namespace TelCo.ColorCoder
 {
     /// <summary>
     /// This class provides the mapping of pair number to color 
     /// </summary>
-    class GetColorFromPairNumber
+    class GetColor
     {
         /// <summary>
         /// Given a pair number function returns the major and minor colors in that order
         /// </summary>
         /// <param name="pairNumber">Pair number of the color to be fetched</param>
         /// <returns></returns>
-        internal static ColorPair GetColorFromPairNumber(int pairNumber)
+        internal static DefineColorLists.ColorPair GetColorFromPairNumber(int pairNumber)
         {
             // The function supports only 1 based index. Pair numbers valid are from 1 to 25
             int minorSize = colorMapMinor.Length;
