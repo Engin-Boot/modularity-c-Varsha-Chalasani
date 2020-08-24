@@ -8,7 +8,7 @@ namespace TelCo.ColorCoder
     /// <summary>
     /// This class provides the testinf and debugging
     /// </summary>
-    class Test
+    partial class Program
     {
         /// <summary>
         /// Test code for the class
