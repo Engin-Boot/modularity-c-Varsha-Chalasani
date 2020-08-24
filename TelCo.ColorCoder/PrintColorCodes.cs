@@ -9,9 +9,9 @@ namespace TelCo.ColorCoder
     /// </summary>
     partial class Program
     {
-        private static void ToString()
+        private override void ToString()
         {
-            for(int pairNumber = 1; pairNumber < 26; PairNumber++)
+            for(int pairNumber = 1; pairNumber < 26; pairNumber++)
             {
                 ColorPair pair = Program.GetColorFromPairNumber(pairNumber);
                 Console.WriteLine("Pair Number : {0}   Colors : {1}\n", pairNumber, pair);
