@@ -14,7 +14,7 @@ namespace TelCo.ColorCoder
         /// Test code for the class
         /// </summary>
         /// <param name="args"></param>
-        private void Main(string[] args)
+        private static void Main(string[] args)
         {
             int pairNumber = 4;
             ColorPair testPair1 = Program.GetColorFromPairNumber(pairNumber);
@@ -44,7 +44,8 @@ namespace TelCo.ColorCoder
             Console.WriteLine("[In]Colors: {0}, [Out] PairNumber: {1}\n\n", testPair2, pairNumber);
             Debug.Assert(pairNumber == 6);
             
-            string colorCodeWithColors = Program.ToString();
+            Program object = new Program();
+            string colorCodeWithColors = object.ToString();
             Console.WriteLine(colorCodeWithColors);
         }
     }
