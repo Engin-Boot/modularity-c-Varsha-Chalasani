@@ -11,7 +11,7 @@ namespace TelCo.ColorCoder
     {
         private static void ToString()
         {
-            for(pairNumber = 1; pairNumber < 26; PairNumber++)
+            for(int pairNumber = 1; pairNumber < 26; PairNumber++)
             {
                 ColorPair pair = Program.GetColorFromPairNumber(pairNumber);
                 Console.WriteLine("Pair Number : {0}   Colors : {1}\n", pairNumber, pair);
