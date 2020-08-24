@@ -11,7 +11,7 @@ namespace TelCo.ColorCoder
     /// This class provides the color coding and 
     /// mapping of pair number to color and color to pair number.
     /// </summary>
-    class DefineColorLists
+    partial class DefineColorLists
     {
         /// <summary>
         /// Array of Major colors
