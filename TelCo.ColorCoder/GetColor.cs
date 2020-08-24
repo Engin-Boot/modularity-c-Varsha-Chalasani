@@ -15,7 +15,7 @@ namespace TelCo.ColorCoder
         /// </summary>
         /// <param name="pairNumber">Pair number of the color to be fetched</param>
         /// <returns></returns>
-        internal static DefineColorLists.ColorPair GetColorFromPairNumber(int pairNumber)
+        internal static ColorPair GetColorFromPairNumber(int pairNumber)
         {
             // The function supports only 1 based index. Pair numbers valid are from 1 to 25
             int minorSize = colorMapMinor.Length;
