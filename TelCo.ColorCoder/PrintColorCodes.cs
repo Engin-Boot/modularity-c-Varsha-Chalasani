@@ -16,7 +16,7 @@ namespace TelCo.ColorCoder
             for(int pairNumber = 1; pairNumber < 26; pairNumber++)
             {
                 ColorPair pair = Program.GetColorFromPairNumber(pairNumber);
-                colorCodeWithColors += "Pair Number : {pairNumber}    Colors : {pair}\n"; 
+                colorCodeWithColors += "Pair Number : " + pairNumber +  "  Colors : " + pair + "\n"; 
             }
             
              return colorCodeWithColors;
