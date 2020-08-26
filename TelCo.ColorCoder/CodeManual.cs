@@ -8,12 +8,12 @@ namespace TelCo.ColorCoder
     /// <summary>
     /// This class provides the color code manual
     /// </summary>
-    partial class Program
+    class CodeManual
     {
-        public override string ToString() //overrides the ToString() in DefineColorLists
+        public override string ToString() //overrides the ToString() in ColorLists
         {
             string colorCodeWithColors = "";
-            for(int pairNumber = 1; pairNumber < 26; pairNumber++)
+            for(int pairNumber = 1; pairNumber <= 25; pairNumber++)
             {
                 ColorPair pair = Program.GetColorFromPairNumber(pairNumber);
                 colorCodeWithColors += "Pair Number : " + pairNumber +  "   Colors : " + pair + "\n"; 

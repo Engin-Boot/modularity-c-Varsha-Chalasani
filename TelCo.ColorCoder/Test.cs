@@ -1,14 +1,13 @@
 using System;
 using System.Diagnostics;
 using System.Drawing;
-using TelCo.ColorCoder;
 
 namespace TelCo.ColorCoder
 {
     /// <summary>
     /// This class provides the testinf and debugging
     /// </summary>
-    partial class Program
+    class Test
     {
         /// <summary>
         /// Test code for the class
@@ -44,8 +43,8 @@ namespace TelCo.ColorCoder
             Console.WriteLine("[In]Colors: {0}, [Out] PairNumber: {1}\n\n", testPair2, pairNumber);
             Debug.Assert(pairNumber == 6);
             
-            Program varToAccessNonStatic = new Program();
-            Console.WriteLine(varToAccessNonStatic.ToString());
+            Program program = new Program();
+            Console.WriteLine(program.ToString());
         }
     }
 }

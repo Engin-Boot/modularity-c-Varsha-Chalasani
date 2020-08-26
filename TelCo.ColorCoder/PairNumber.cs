@@ -7,14 +7,14 @@ namespace TelCo.ColorCoder
     /// <summary>
     /// This class provides the color to pair number.
     /// </summary>
-    partial class Program
+    class PairNumber
     {
         /// <summary>
         /// Given the two colors the function returns the pair number corresponding to them
         /// </summary>
         /// <param name="pair">Color pair with major and minor color</param>
         /// <returns></returns>
-        internal static int GetPairNumberFromColor(ColorPair pair)
+        public static int GetPairNumberFromColor(ColorPair pair)
         {
             // Find the major color in the array and get the index
             int majorIndex = -1;

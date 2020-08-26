@@ -8,14 +8,14 @@ namespace TelCo.ColorCoder
     /// <summary>
     /// This class provides the mapping of pair number to color 
     /// </summary>
-    partial class Program
+    class ColorCombination
     {
         /// <summary>
         /// Given a pair number function returns the major and minor colors in that order
         /// </summary>
         /// <param name="pairNumber">Pair number of the color to be fetched</param>
         /// <returns></returns>
-        private static ColorPair GetColorFromPairNumber(int pairNumber)
+        public static ColorPair GetColorFromPairNumber(int pairNumber)
         {
             // The function supports only 1 based index. Pair numbers valid are from 1 to 25
             int minorSize = colorMapMinor.Length;
