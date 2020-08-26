@@ -2,6 +2,7 @@ using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.Text;
+using static TelCo.ColorCoder.ColorLists;
 
 namespace TelCo.ColorCoder
 {
@@ -13,9 +14,9 @@ namespace TelCo.ColorCoder
         public override string ToString() //overrides the ToString() in ColorLists
         {
             string colorCodeWithColors = "";
-            for(int pairNumber = 1; pairNumber <= 25; pairNumber++)
+            for(int pairNumber = 1; pairNumber <= colorMapMinor.Length*colorMapMajor.Length; pairNumber++)
             {
-                ColorPair pair = Program.GetColorFromPairNumber(pairNumber);
+                ColorPair pair = ColorPair.GetColorFromPairNumber(pairNumber);
                 colorCodeWithColors += "Pair Number : " + pairNumber +  "   Colors : " + pair + "\n"; 
             }
             

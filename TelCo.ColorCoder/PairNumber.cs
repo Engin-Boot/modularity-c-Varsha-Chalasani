@@ -1,13 +1,15 @@
 using System;
 using System.Diagnostics;
 using System.Drawing;
+using static TelCo.ColorCoder.ColorLists;
+using static TelCo.ColorCoder.ColorPair;
 
 namespace TelCo.ColorCoder
 {
     /// <summary>
     /// This class provides the color to pair number.
     /// </summary>
-    class PairNumber
+    public class PairNumber
     {
         /// <summary>
         /// Given the two colors the function returns the pair number corresponding to them
