@@ -25,7 +25,7 @@ namespace TelCo.ColorCoder
         }
 
         //prints the whole list
-        public string ToString() 
+        public override string ToString() 
         {
             string colorCodeWithColors = "";
             for (int pairNumber = 1; pairNumber <= colorMapMinor.Length * colorMapMajor.Length; pairNumber++)
