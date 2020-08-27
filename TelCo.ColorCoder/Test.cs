@@ -47,12 +47,13 @@ namespace TelCo.ColorCoder
             CodeManual  codeManual = new CodeManual();
             Console.WriteLine(codeManual.ToString());
 
-            string manual = codeManual.ToString(20);
-            Console.WriteLine(manual);
-            Debug.Assert(manual.Equals("Pair Number : 20   Colors : MajorColor:Yellow, MinorColor:SlateGray\n"));
+            string testString1 = codeManual.ToString(20);
+            Console.WriteLine(testString1);
+            Debug.Assert(testString1.Equals("Pair Number : 20   Colors : MajorColor:Yellow, MinorColor:SlateGray\n"));
 
-            manual = codeManual.ToString(2,3);
-            Debug.Assert(manual.Equals("Pair Number : 2   Colors : MajorColor:White, MinorColor:Orange\nPair Number: 3   Colors: MajorColor:White, MinorColor: Green\n"));
+            string testString2 = codeManual.ToString(2,3);
+            Console.WriteLine(testString2);
+            Debug.Assert(testString2.Equals("Pair Number : 2   Colors : MajorColor:White, MinorColor:Orange\nPair Number: 3   Colors: MajorColor:White, MinorColor: Green\n"));
         }
     }
 }
