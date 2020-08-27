@@ -49,7 +49,7 @@ namespace TelCo.ColorCoder
 
             string manual = codeManual.ToString(20);
             Console.WriteLine(manual);
-            Debug.Assert(manual.Equals("Pair Number : 20   Colors : MajorColor:Yellow, MinorColor:SlateGray"));
+            Debug.Assert(manual.Equals("Pair Number : 20   Colors : MajorColor:Yellow, MinorColor:SlateGray\n"));
 
             manual = codeManual.ToString(2,3);
             Debug.Assert(manual.Equals("Pair Number : 2   Colors : MajorColor:White, MinorColor:Orange\nPair Number: 3   Colors: MajorColor:White, MinorColor: Green"));
