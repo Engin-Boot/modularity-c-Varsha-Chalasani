@@ -53,7 +53,7 @@ namespace TelCo.ColorCoder
 
             string testString2 = codeManual.ToString(2,3);
             Console.WriteLine(testString2);
-            Debug.Assert(testString2.Equals("Pair Number : 2   Colors : MajorColor:White, MinorColor:Orange\nPair Number: 3   Colors: MajorColor:White, MinorColor: Green\n"));
+            Debug.Assert(testString2.Equals("Pair Number : 2   Colors : MajorColor:White, MinorColor:Orange\nPair Number: 3   Colors: MajorColor:White, MinorColor:Green\n"));
         }
     }
 }
