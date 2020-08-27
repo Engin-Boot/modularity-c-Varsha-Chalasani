@@ -52,7 +52,7 @@ namespace TelCo.ColorCoder
             Debug.Assert(manual.Equals("Pair Number : 20   Colors : MajorColor:Yellow, MinorColor:SlateGray\n"));
 
             manual = codeManual.ToString(2,3);
-            Debug.Assert(manual.Equals("Pair Number : 2   Colors : MajorColor:White, MinorColor:Orange\nPair Number: 3   Colors: MajorColor:White, MinorColor: Green"));
+            Debug.Assert(manual.Equals("Pair Number : 2   Colors : MajorColor:White, MinorColor:Orange\nPair Number: 3   Colors: MajorColor:White, MinorColor: Green\n"));
         }
     }
 }
