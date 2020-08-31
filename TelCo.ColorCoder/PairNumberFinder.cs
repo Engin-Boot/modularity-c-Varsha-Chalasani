@@ -18,27 +18,8 @@ namespace TelCo.ColorCoder
         /// <returns></returns>
         public static int GetPairNumberFromColor(ColorPair pair)
         {
-            // Find the major color in the array and get the index
-            int majorIndex = -1;
-            for (int i = 0; i < colorMapMajor.Length; i++)
-            {
-                if (colorMapMajor[i] == pair.majorColor)
-                {
-                    majorIndex = i;
-                    break;
-                }
-            }
-
-            // Find the minor color in the array and get the index
-            int minorIndex = -1;
-            for (int i = 0; i < colorMapMinor.Length; i++)
-            {
-                if (colorMapMinor[i] == pair.minorColor)
-                {
-                    minorIndex = i;
-                    break;
-                }
-            }
+            int majorIndex = GetMajorIndex(pair);
+            int minorIndex = GetMinorIndex(pair);
             // If colors can not be found throw an exception
             if (majorIndex == -1 || minorIndex == -1)
             {
@@ -50,5 +31,35 @@ namespace TelCo.ColorCoder
             // (Note: +1 in compute is because pair number is 1 based, not zero)
             return (majorIndex * colorMapMinor.Length) + (minorIndex + 1);
         }
-    }
+
+        // Find the major color in the array and get the index
+        static int GetMajorIndex(ColorPair pair)
+        {
+            int majorIndex = -1;
+            for (int i = 0; i < colorMapMajor.Length; i++)
+            {
+                if (colorMapMajor[i] == pair.majorColor)
+                {
+                    majorIndex = i;
+                    break;
+                }
+            }
+            return majorIndex;
+        }
+
+        // Find the minor color in the array and get the index
+        static int GetMinorIndex(ColorPair pair)
+        {
+            int minorIndex = -1;
+            for (int i = 0; i < colorMapMinor.Length; i++)
+            {
+                if (colorMapMinor[i] == pair.minorColor)
+                {
+                    minorIndex = i;
+                    break;
+                }
+            }
+            return minorIndex;
+        }
+    }   
 }
