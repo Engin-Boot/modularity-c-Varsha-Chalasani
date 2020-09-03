@@ -27,23 +27,13 @@ namespace TelCo.ColorCoder
         //prints the whole list
         public override string ToString() 
         {
-            string colorCodeWithColors = "";
-            for (int pairNumber = 1; pairNumber <= colorMapMinor.Length * colorMapMajor.Length; pairNumber++)
-            {
-                ColorPair pair = ColorPair.GetColorFromPairNumber(pairNumber);
-                colorCodeWithColors += "Pair Number : " + pairNumber + "   Colors : " + pair + "\n";
-            }
-
-            return colorCodeWithColors;
+            return this.ToString(1,colorMapMinor.Length * colorMapMajor.Length);
         }
 
         //prints the manual for asked Pair Number
         public string ToString(int pairCode) 
         {
-            string colorCodeWithColors = "";
-            ColorPair pair = ColorPair.GetColorFromPairNumber(pairCode);
-            colorCodeWithColors += "Pair Number : " + pairCode + "   Colors : " + pair + "\n";
-            return colorCodeWithColors;
+            return this.ToString(pairCode, pairCode);
         }
 
     }
