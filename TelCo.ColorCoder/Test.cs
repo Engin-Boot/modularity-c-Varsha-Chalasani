@@ -14,7 +14,7 @@ namespace TelCo.ColorCoder
         /// Test code for the class
         /// </summary>
         /// <param name="args"></param>
-        private static void Main(string[] args)
+        private static void Main()
         {
             int pairNumber = 4;
             ColorPair testPair1 = ColorPair.GetColorFromPairNumber(pairNumber);
